@@ -1,0 +1,44 @@
+@import "../../assets/styles/variables"
+
+.Switch
+  font-size: 12px
+  width: 100%
+  margin: 0
+  padding-left: 35px
+  line-height: 12px
+
+  &-label
+    color: $gray
+    flex: 0
+    padding: 0
+    width: fit-content
+    white-space: nowrap
+    transition: all 0.2s ease
+
+    &.active
+      color: black
+
+  &-checkbox
+    flex: 0
+    padding: 0
+    font-size: 18px
+    margin: 0 10px
+
+    & .form-switch
+      padding-left: 0
+
+      & .form-check-input
+        background-color: $light-gray
+        border: none
+        background-image: $switch-bg
+        margin: 0
+        width: 30px
+        transition: all 0.2s ease
+
+        &:focus
+          background-image: $switch-bg
+          box-shadow: none
+          
+        &:checked
+          background-image: $switch-bg
+          background-color: $orange

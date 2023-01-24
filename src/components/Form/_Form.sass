@@ -1,0 +1,32 @@
+@import "../../assets/styles/variables"
+
+.Form
+  font-weight: 700
+  max-width: 400px
+  width: 100%
+  padding-left: 20px
+
+  &-label
+    font-size: 12px
+    color: $gray
+
+  &-inputs
+    margin-bottom: 25px
+
+  & .Radios
+    margin-bottom: 15px
+
+  & .Switch
+    margin-bottom: 20px
+
+.AnimatedComponent
+  visibility: hidden
+  transition: all 0.1s ease 0.05s
+  transform: translateY(-20px)
+
+  &.visible
+    visibility: hidden
+    transform: unset
+
+
+

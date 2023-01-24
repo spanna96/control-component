@@ -1,0 +1,23 @@
+@import "../../assets/styles/variables"
+
+.Radios
+  padding-left: 15px
+
+  & .form-check-input
+    &:checked
+      background-color: black
+      border-color: black
+      outline: 2px solid white
+      box-shadow: none
+      background-image: none
+      outline-offset: -3px
+      border: 1px solid $gray
+
+    &:focus
+      box-shadow: none
+      border-color: $gray
+
+  
+  &-item
+    display: inline-flex
+    gap: 8px

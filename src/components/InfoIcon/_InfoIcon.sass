@@ -1,0 +1,58 @@
+@import "../../assets/styles/variables"
+
+.InfoIcon
+  display: flex
+  align-items: center
+  height: inherit
+  position: relative
+  justify-content: center
+
+  &-icon
+      width: $info-icon-width
+      height: $info-icon-width
+      position: relative
+      display: block
+
+      & .popover
+        font-family: "Futura"
+        font-size: 11px
+        position: absolute
+        background-color: $popover-bg
+        color: white
+        border: none
+        border-radius: 0
+        padding: 15px 10px
+        font-weight: 600
+        line-height: 1.7
+        width: $popover-width
+        margin-left: 50%
+        margin-top: 100%
+        z-index: 999
+        visibility: hidden
+        opacity: 0
+        transition: all .2s ease
+        
+        &:after
+          content: ""
+          top: 0
+          left: 0
+          position: absolute
+          transform: translateY(-100%)
+          border: 8px solid transparent
+          border-bottom: 8px solid $popover-bg
+          border-left: 8px solid $popover-bg
+
+      &:hover .popover:not(.shown) ,
+      & .popover.shown
+        visibility: visible
+        opacity: 1
+
+      & svg 
+        display: block
+        cursor: pointer
+
+
+
+
+
+
